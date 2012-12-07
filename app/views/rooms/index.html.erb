@@ -1,11 +1,19 @@
 <h1>komnaty</h1>
 
+<tr>
 <% @rooms.each do |room| %>
 
-    <%= room.tittle %>
-    <%= room.city %>
-    <%= room.address %>
-    <%= room.text %>
-   <h2> <%= room.price %> </h2>
+    <img width="200px" src="<%= room.pic %> " alt=""> </img>
+
+      <h4><%= room.tittle %> </h4>
+      <h4> <%= room.city %>  </h4>
+      <h4><%= room.address %> </h4>
+      <h4><%= room.text %> </h4>
+      <h2> <%= room.price %> </h2>
 
 <% end %>
+</tr>
+
+
+<%= link_to 'new room', :action => :new %>
+<%= link_to 'Welcome', :controller => :welcome %>

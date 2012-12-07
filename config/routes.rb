@@ -2,13 +2,22 @@ Rusrails::Application.routes.draw do
 
   root :to => "welcome#index"
 
-  get "rooms/rooms"
-  get "rooms/index"
-  get "rooms" => "rooms#index"
+
+   #get "rooms/index"
+
+   get "rooms/:id/edit" => "posts#edit"
+   put "rooms/:id" => "posts#update"
+   get "rooms/new"
+   get "rooms/show"
+   get "rooms" => "rooms#index"
+   post "rooms/create"
+   get "rooms/:id" => "rooms#show"
+   delete "rooms/:id" => "rooms#destroy"
 
 
   get "welcome/index"
   get "welcome/about"
+
 
   get "posts/:id/edit" => "posts#edit"
   put "posts/:id" => "posts#update"
