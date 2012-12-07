@@ -1,3 +1,3 @@
 class Room < ActiveRecord::Base
-  attr_accessible :adress, :city, :pic, :price, :rooms, :text, :tittle
+  attr_accessible :address, :city, :pic, :price, :rooms, :text, :tittle
 end
