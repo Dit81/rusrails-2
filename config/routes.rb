@@ -32,6 +32,18 @@ Rusrails::Application.routes.draw do
     resources :comments
   end
 
+  get "cities/Lvov"
+  get "cities/Karpaty"
+  get "cities/Kiev"
+  get "cities/Odessa"
+  get "cities/Krim"
+  get "cities/Donetsk"
+  get "cities/Harkov"
+  get "cities/Yalta"
+  get "cities/Alushta"
+
+
+
   #Это создаст comments как вложенный ресурс в posts.
   #Это другая сторона захвата иерархических отношений, существующих между публикациями и комментариями.
 

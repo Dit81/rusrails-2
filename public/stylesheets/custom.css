@@ -1,0 +1,171 @@
+.all {
+   display: block;
+   position: relative;
+   top:10px;
+   width: 875px;
+   padding: 0px 25px;
+   margin: 0px auto;
+}
+
+    #logo {
+        position: relative;
+        left: 10px;
+        top:17px;
+        font-size: 30px; color: rgb(80, 123, 176);
+        font-family: Helvetica;
+    }
+
+        #login a {
+            position: absolute; top:25px;
+            left: 550px;
+            font-family: Helvetica;
+            font-size: 13px;
+            text-decoration: underline;
+            z-index: 1;
+        }
+
+        #register a {
+            position: absolute; top:25px;
+            left: 600px;
+            font-family: Helvetica;
+            font-size: 13px;
+            text-decoration: underline;
+            z-index: 1;
+        }
+
+    #ad_button {
+        position: absolute;
+        top:10px; left: 700px;
+    }
+
+        #ad_button a {
+            z-index: 1;
+        }
+
+    #line {
+        position: relative;
+          border-bottom: 1px solid #cfcfcf ;
+          padding-top: 48px;
+    }
+
+
+
+
+    #city1 , #city2 , #city3 , #city4 , #city5, #city6, #city7, #city8  {
+        position: relative;
+        top:10px;
+        float: left;
+        font-size: 22px;
+        font-family: Helvetica;
+        word-spacing: 15px;
+        letter-spacing: 1px;
+        color: #525252;
+        padding-left: 34px;
+        z-index: 2;
+
+    }
+
+    #line2 {
+        position: relative;
+        border-bottom: 1px solid #cfcfcf ;
+        padding-top: 43px;
+
+    }
+
+
+#body {
+    position: relative;
+
+}
+
+
+    #center {
+       position: relative;
+       top:0px;
+       left: 70px;
+       width: 250px;
+        float: left;
+        top:100px;
+
+
+    }
+
+    #center1 {font-family: Helvetica;
+        font-size: 38px;  line-height: 31px; }
+    #center2 {font-family: Helvetica; left:-30px; width: 400px; position: relative; top:10px;
+        font-size: 15px; color: rgb(63, 111, 176);}
+
+    #home {
+        position: relative;
+        left:121px;
+    }
+
+
+    input,select   {
+        z-index: 2;
+        position: relative;
+        margin-top: 5px;
+        width: 270px;
+        height: 40px;
+        left:-20px;
+        border: 1px solid #93a8a9 ;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -khtml-border-radius: 5px;
+        border-radius: 5px;
+        font-size: 17px; color: rgb(63, 111, 176);
+
+    }
+
+    #search {
+        position: relative;
+        top:30px;
+    }
+
+
+#footer {
+    position: relative;
+    font-family: Helvetica;
+    font-size: 14px;
+}
+
+
+
+    #line3 {
+         position: relative;
+          border-bottom: 1px solid #cfcfcf ;
+         padding-top: 20px;
+    }
+
+    #about {
+        position: relative;
+        top:10px;
+         left: 25px;
+    }
+
+    #about22 {
+         position: relative;
+         top:-70px;
+         left: 270px;
+    }
+
+    #about ,#about2 ,#about3, #facebook, #twitter, #vk, #about11, #about111, #about1111 {
+        position: relative;
+        padding-top: 10px;
+    }
+
+
+    #social {
+        position: relative;
+        top:-65px; float: right; right: 300px;
+    }
+
+
+    #copyright {
+        position: relative;
+        top:-50px; left: 50px;
+        float: right;
+        font-family: Helvetica;
+            font-size: 14px;
+        color: #525252;
+    }

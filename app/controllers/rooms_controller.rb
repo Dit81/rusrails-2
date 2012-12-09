@@ -12,7 +12,7 @@ class RoomsController < ApplicationController
 
   def create
 
-    @room = Room.new(params[:post])
+    @room = Room.new(params[:room])
 
       if @room.save
         redirect_to :action => :show, :id => @room.id
