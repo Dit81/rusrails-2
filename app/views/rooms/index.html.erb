@@ -1,19 +1,20 @@
-<h1>komnaty</h1>
+<h1>Listing rooms</h1>
 
-<tr>
-<% @rooms.each do |room| %>
+<table>
 
-    <img width="200px" src="<%= room.pic %>" alt=""> </img>
+  <% @rooms.each do |room| %>
+    <tr>
+      <td> <img width="200px" src="<%= room.pic %>" alt="" /></td>
 
-      <h4><%= room.tittle %> </h4>
-      <h4> <%= room.city %>  </h4>
-      <h4><%= room.address %> </h4>
-      <h4><%= room.text %> </h4>
-      <h2> <%= room.price %> </h2>
+      <td> <%= room.tittle %><%= link_to 'Show', :action => :show, :id => room.id %></td>
+      <td> <%= room.city %>    </td>
+      <td> <%= room.address %> </td>
+      <td> <h3><%= room.price %>  </h3> </td>
 
-<% end %>
-</tr>
+       <%#= link_to 'Edit', :action => :edit, :id => room.id %>
+      <td> <%= link_to 'Destroy', { :action => :destroy, :id => room.id }, :method => :delete, :confirm => 'Are you sure?' %></td>
+    </tr>
+  <% end %>
+</table>
 
 
-<%= link_to 'new room', :action => :new %>
-<%= link_to 'Welcome', :controller => :welcome %>

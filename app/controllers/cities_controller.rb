@@ -1,5 +1,6 @@
 class CitiesController < ApplicationController
     def Lvov
+
     end
 
     def Karpaty
