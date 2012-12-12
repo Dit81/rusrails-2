@@ -5,6 +5,13 @@
    width: 875px;
    padding: 0px 25px;
    margin: 0px auto;
+    font-family: Helvetica;
+}
+
+a {
+    font-family: Helvetica;
+    text-decoration: none;
+    color: rgba(66, 66, 66, 0.76);
 }
 
     #logo {
@@ -13,6 +20,8 @@
         top:17px;
         font-size: 30px; color: rgb(80, 123, 176);
         font-family: Helvetica;
+        z-index: 12;
+
     }
 
         #login a {
@@ -22,6 +31,7 @@
             font-size: 13px;
             text-decoration: underline;
             z-index: 1;
+
         }
 
         #register a {
@@ -39,8 +49,9 @@
     }
 
         #ad_button a {
-            z-index: 1;
-        }
+                    z-index: 61;
+                }
+
 
     #line {
         position: relative;
@@ -48,6 +59,75 @@
           padding-top: 48px;
     }
 
+
+   /*=========================room====================*/
+
+
+
+    #room {
+        position: relative;
+        padding-top: 5px;
+    }
+
+        #line_room {
+            border: 1px solid #e9e9e9;
+            position: relative;
+            top: 10px;
+        }
+
+        #tittle {
+            position: relative;
+            top:-154px;
+            left: 221px;
+            font-size: 18px;
+        }
+
+        #address {
+            position: relative;
+            left: 225px;
+            font-size: 14px;
+            top: -80px;
+
+
+        }
+
+        #price {
+            position: relative;
+            font-size: 18px;
+            top: -221px;
+            float: right;
+
+        }
+
+        #cena {
+             position: relative;
+            font-size: 13px;
+            top:-161px;
+            left: 45px;
+            float: right;
+
+        }
+
+
+
+
+   /*=========================end room====================*/
+
+    #user_new {
+        position: relative;
+        left: 100px;
+        top:10px;
+    }
+
+
+
+   /*=========================-Form-====================*/
+
+
+
+
+
+  /*=========================-end form-====================*/
 
 
 
@@ -123,6 +203,11 @@
     }
 
 
+
+
+
+ /*=================================-footer-======================================*/
+
 #footer {
     position: relative;
     font-family: Helvetica;
@@ -169,3 +254,5 @@
             font-size: 14px;
         color: #525252;
     }
+
+ /*=================================end footer======================================*/

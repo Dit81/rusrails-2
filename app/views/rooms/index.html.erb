@@ -1,20 +1,25 @@
-<h1>Listing rooms</h1>
+<h4>Квартиры посуточно во Львове</h4>
 
-<table>
+<div id="room">
 
   <% @rooms.each do |room| %>
-    <tr>
-      <td> <img width="200px" src="<%= room.pic %>" alt="" /></td>
 
-      <td> <%= room.tittle %><%= link_to 'Show', :action => :show, :id => room.id %></td>
-      <td> <%= room.city %>    </td>
-      <td> <%= room.address %> </td>
-      <td> <h3><%= room.price %>  </h3> </td>
+       <img width="200px" height="150px" src="<%= room.pic %>" />
+
+       <div id="line_room"></div>
+
+       <div id="tittle"> <%= room.tittle %><%= link_to '.', :action => :show, :id => room.id %> </div>
+
+       <div id="rooms" <%= room.rooms %>  </div>  <div id="address"> <%= room.address %> </div>
+
+       <div id="price"><h2><%= room.price %> </h2>  </div> <div id="cena"> грн./сутки </div>
+
 
        <%#= link_to 'Edit', :action => :edit, :id => room.id %>
-      <td> <%= link_to 'Destroy', { :action => :destroy, :id => room.id }, :method => :delete, :confirm => 'Are you sure?' %></td>
-    </tr>
+       <%#= link_to 'Destroy', { :action => :destroy, :id => room.id }, :method => :delete, :confirm => 'Are you sure?' %>
+
   <% end %>
-</table>
+
+  </div>
 
 

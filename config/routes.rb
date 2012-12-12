@@ -28,6 +28,21 @@ Rusrails::Application.routes.draw do
   get "posts/:id" => "posts#show"
   delete "posts/:id" => "posts#destroy"
 
+  get "users/:id/edit" => "users#edit"
+   put "users/:id" => "users#update"
+   get "users/new"
+   get "users/show"
+   get "users" => "users#index"
+   post "users/create"
+   get "users/:id" => "users#show"
+   delete "users/:id" => "users#destroy"
+
+
+
+  resources :users
+
+  match '/signup',  :to => 'users#new'
+
   resources :posts do
     resources :comments
   end

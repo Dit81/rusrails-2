@@ -1,0 +1,23 @@
+
+<div id="user_new">
+<%= form_for :user, :url => { :action => :create } do |f| %>
+
+  <p>
+    <%= f.label "Имя " %><br>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label "Email" %><br>
+    <%= f.text_field :email %>
+  </p>
+
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', :action => :index %>
+</div>
+
