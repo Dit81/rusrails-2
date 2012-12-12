@@ -30,7 +30,7 @@ a {
             font-family: Helvetica;
             font-size: 13px;
             text-decoration: underline;
-            z-index: 1;
+            z-index: 111;
 
         }
 
@@ -40,13 +40,13 @@ a {
             font-family: Helvetica;
             font-size: 13px;
             text-decoration: underline;
-            z-index: 1;
+            z-index: 111;
         }
 
-    #ad_button {
-        position: absolute;
-        top:10px; left: 700px;
-    }
+        #ad_button {
+            position: absolute;
+            top:10px; left: 700px; z-index: 111;
+        }
 
         #ad_button a {
                     z-index: 61;
@@ -112,6 +112,19 @@ a {
 
 
    /*=========================end room====================*/
+
+
+   #room_all {position: relative; top: 10px; padding-left: 20px; }
+   #room_tittle {position: relative; font-size: 22px; top: 10px; margin-top: 10px;}
+   #room_city {position: relative; margin-top: 15px;}
+   #room_pic {position: relative; margin-top: 15px}
+   #room_address {position: relative; margin-top: 15px}
+   #room_rooms {position: relative; margin-top: 15px}
+   #room_price {position: relative; margin-top: 15px; float: right; font-size: 28px; top: -19px}
+   #room_text {position: relative; margin-top: 15px }
+
+
+
 
     #user_new {
         position: relative;

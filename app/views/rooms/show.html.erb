@@ -1,18 +1,13 @@
-<p>
-  <%= @room.tittle %>
-</p>
 
-<p>
-  <%= @room.city %>
-</p>
-
-<p><img src="<%= @room.pic %>" /></p>
-
-<p><%= @room.address %></p>
-<p><%= @room.rooms %></p>
-<p><%= @room.price %></p>
-
-<%= @room.text %>
+<div id="room_all">
+  <div id="room_tittle"> <%= @room.tittle %></div>
+  <div id="room_price"> <%= @room.price %> грн./сутки</div>
+  <div id="room_city"> <%= @room.city %> <%= @room.address %> </div>
+  <div id="room_address">  </div>
+  <div id="room_pic"> <img src="<%= @room.pic %>" /></div>
+  <div id="room_rooms"> <%= @room.rooms %></div>
+  <div id="room_text"> <%= @room.text %></div>
+</div>
 
 <p>
 <%= link_to 'Back', :action => :index %>
