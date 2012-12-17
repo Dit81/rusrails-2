@@ -8,12 +8,15 @@
 
        <div id="line_room"></div>
 
-       <div id="tittle"> <%= room.tittle %><%= link_to '.', :action => :show, :id => room.id %> </div>
+       <div id="tittle"><%= link_to room.tittle, :action => :show, :id => room.id %>   </div>
 
-       <div id="rooms" <%= room.rooms %>  </div>  <div id="address"> <%= room.address %> </div>
+       <div id="address"> <%= room.address %> </div>
 
        <div id="price"><h2><%= room.price %> </h2>  </div> <div id="cena"> грн./сутки </div>
 
+       <div id="more"> <%= link_to "Подробнее", :action => :show, :id => room.id %> </div>
+
+       <div id="rooms" > <%= room.rooms %> <div id="rooms_komnat">/К.</div> </div>
 
        <%#= link_to 'Edit', :action => :edit, :id => room.id %>
        <%#= link_to 'Destroy', { :action => :destroy, :id => room.id }, :method => :delete, :confirm => 'Are you sure?' %>

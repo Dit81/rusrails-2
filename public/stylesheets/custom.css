@@ -62,86 +62,55 @@ a {
 
    /*=========================room====================*/
 
+    #room { position: relative; padding-top: 5px; }
 
+    #line_room { border: 1px solid #e9e9e9; position: relative; top: 10px; }
 
-    #room {
-        position: relative;
-        padding-top: 5px;
-    }
+    #tittle { position: relative; top:-154px; left: 221px; font-size: 18px; }
 
-        #line_room {
-            border: 1px solid #e9e9e9;
-            position: relative;
-            top: 10px;
-        }
+    #address { position: relative; left: 225px; font-size: 14px; top: -80px; }
 
-        #tittle {
-            position: relative;
-            top:-154px;
-            left: 221px;
-            font-size: 18px;
-        }
+    #price { position: relative; font-size: 18px; top: -221px; float: right; }
 
-        #address {
-            position: relative;
-            left: 225px;
-            font-size: 14px;
-            top: -80px;
+    #cena { position: relative; font-size: 13px; top:-161px; left: 45px; float: right;}
 
+    #more {position: relative; float: right; font-size: 18px; color: #cd5c5c; z-index: 222; top:-89px;
+               text-decoration: underline; left: 104px;}
 
-        }
+   #rooms {position: relative; top: -150px; font-size: 32px; right: 432px; float: right; }
 
-        #price {
-            position: relative;
-            font-size: 18px;
-            top: -221px;
-            float: right;
-
-        }
-
-        #cena {
-             position: relative;
-            font-size: 13px;
-            top:-161px;
-            left: 45px;
-            float: right;
-
-        }
-
-
-
+   #rooms_komnat {position: relative;  font-size: 18px; top: -23px; left: 23px;}
 
    /*=========================end room====================*/
 
 
+
+
+
+   /*=========================room more====================*/
+
    #room_all {position: relative; top: 10px; padding-left: 20px; }
+
    #room_tittle {position: relative; font-size: 22px; top: 10px; margin-top: 10px;}
+
    #room_city {position: relative; margin-top: 15px;}
+
    #room_pic {position: relative; margin-top: 15px}
+
    #room_address {position: relative; margin-top: 15px}
+
    #room_rooms {position: relative; margin-top: 15px}
+
    #room_price {position: relative; margin-top: 15px; float: right; font-size: 28px; top: -19px}
+
    #room_text {position: relative; margin-top: 15px }
 
-
-
-
-    #user_new {
-        position: relative;
-        left: 100px;
-        top:10px;
-    }
-
-
-
-   /*=========================-Form-====================*/
+   /*=========================END room more====================*/
 
 
 
 
-
-  /*=========================-end form-====================*/
-
+    #user_new { position: relative; left: 100px; top:10px; }
 
 
     #city1 , #city2 , #city3 , #city4 , #city5, #city6, #city7, #city8  {
