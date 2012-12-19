@@ -1,9 +1,10 @@
 
 <div id="user_new">
-<%= form_for :user, :url => { :action => :create } do |f| %>
 
+<%= form_for :user, :url => { :action => :create } do |f| %>
+      <%= render 'shared/error_messages' %>
   <p>
-    <%= f.label "Имя " %><br>
+    <%= f.label "Имя" %><br>
     <%= f.text_field :name %>
   </p>
 
@@ -12,12 +13,21 @@
     <%= f.text_field :email %>
   </p>
 
+  <p>
+    <%= f.label "Пароль" %><br />
+    <%= f.password_field :password %>
+  </p>
 
   <p>
-    <%= f.submit %>
+   <%= f.label :password_confirmation, "Подтвердите пароль" %><br />
+   <%= f.password_field :password_confirmation %>
+
+  <p>
+    <%= f.submit "Создать" %>
   </p>
 <% end %>
 
-<%= link_to 'Back', :action => :index %>
+<%= link_to 'Back', :controller => :welcome, :action => :index %>
+
 </div>
 

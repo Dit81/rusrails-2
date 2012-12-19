@@ -12,15 +12,19 @@ class UsersController < ApplicationController
 
       @user = Room.new(params[:user])
 
-        if @user.save
+        if @user.save  # Обработка успешного сохранения.
           redirect_to :action => :show, :id => @user.id
         else
           render 'new'
         end
   end
 
+
+
+
   def new
     @user = User.new
+    @title = "Регистрация"
   end
 
 
