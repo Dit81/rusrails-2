@@ -30,7 +30,7 @@ Rusrails::Application.routes.draw do
 
   get "users/:id/edit" => "users#edit"
    put "users/:id" => "users#update"
-   #get "users/new"
+   get "users/new"
    get "users/show"
    get "users" => "users#index"
    post "users/create"

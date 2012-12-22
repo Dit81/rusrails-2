@@ -3,3 +3,4 @@ class AddPasswordToUsers < ActiveRecord::Migration
     add_column :users, :encrypted_password, :string
   end
 end
+

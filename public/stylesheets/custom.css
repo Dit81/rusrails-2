@@ -101,7 +101,7 @@ a {
 
    #room_rooms {position: relative; margin-top: 15px}
 
-   #room_price {position: relative; margin-top: 15px; float: right; font-size: 28px; top: -19px}
+   #room_price {position: relative; margin-top: 15px;  font-size: 28px; top: px}
 
    #room_text {position: relative; margin-top: 15px }
 
@@ -175,7 +175,7 @@ a {
         -webkit-border-radius: 5px;
         -khtml-border-radius: 5px;
         border-radius: 5px;
-        font-size: 17px; color: rgb(63, 111, 176);
+        font-size: 25px; color: rgb(63, 111, 176);
 
     }
 

@@ -1,7 +1,11 @@
 class UsersController < ApplicationController
 
+  #before_filter :find_user
+
+
   def index
     @users = User.all
+    @title = @user.name
   end
 
   def show
@@ -46,9 +50,15 @@ end
 def destroy
   @user = User.find(params[:id])
   @user.destroy
-
   redirect_to :action => :index
 end
+
+  private
+
+  def find_user
+    @lol = User.find(params[:id])
+  end
+
 
 
 end
