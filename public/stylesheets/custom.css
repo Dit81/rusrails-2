@@ -105,6 +105,8 @@ a {
 
    #room_text {position: relative; margin-top: 15px }
 
+   #form_for_room {position: relative; left: 100px; top:30px;}
+
    /*=========================END room more====================*/
 
 

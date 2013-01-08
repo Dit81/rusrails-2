@@ -1,5 +1,6 @@
-<%= form_for :room, :url => { :action => :create } do |f| %>
+<div id="form_for_room">
 
+<%= form_for :room, :url => { :action => :create } do |f| %>
 
   <p>
     <%= f.label :tittle %><br>
@@ -42,3 +43,6 @@
 <% end %>
 
 <%= link_to 'Back', :action => :index %>
+
+
+</div>
