@@ -1,5 +1,7 @@
 Rusrails::Application.routes.draw do
 
+  get "sessions/new"
+
   root :to => "welcome#index"
 
 
@@ -38,10 +40,14 @@ Rusrails::Application.routes.draw do
    delete "users/:id" => "users#destroy"
 
 
-
   resources :users
 
-  match '/signup',  :to => 'users#new'
+    resources :sessions, :only => [:new, :create, :destroy]
+
+    match '/signup',  :to => 'users#new'
+    match '/signin',  :to => 'sessions#new'
+    match '/signout', :to => 'sessions#destroy'
+
 
   resources :posts do
     resources :comments
